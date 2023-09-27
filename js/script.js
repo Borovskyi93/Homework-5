@@ -1,10 +1,10 @@
 const firstUserNumber = +prompt('Enter first number:');
 
-if (firstUserNumber) {
+if (isNaN(firstUserNumber) !== true) {
     const secondUserNumber = +prompt('Enter second number:');
-    if (secondUserNumber) {
+    if (isNaN(secondUserNumber) !== true) {
         const thirdUserNumber = +prompt('Enter third number:');
-        if (thirdUserNumber) {
+        if (isNaN(thirdUserNumber) !== true) {
             alert(`${(firstUserNumber + secondUserNumber + thirdUserNumber) / 3}`)
         } else {
             alert('INVALID THIRD INPUT!'); 
